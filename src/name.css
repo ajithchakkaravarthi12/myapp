@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    block-size: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(60deg, #e94307, #08d2ed, #b408d6, #0dcb06, #a6c1ee);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    background: linear-gradient(135deg, rgba(231, 2, 2, 0.9), rgba(14, 202, 231, 0.9));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+   
+    inline-size: 800px;
+    box-sizing: border-box; /* Ensures padding doesn't expand the container size */
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-block-end: 20px; /* Add spacing below the heading */
+}
+
+input {
+    inline-size: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    inline-size: 100%;
+    padding: 10px;
+    margin-block-start: 8px;
+    background-color: #1876e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e50ea1;
+}
+
+table {
+    inline-size: 100%;
+    margin-block-start: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.pagination {
+    justify-content: space-between;
+    display: flex;
+    margin-block-start: 20px; /* Add spacing from the table */
+    padding: 0 10px; /* Adds some inner spacing */
+}
